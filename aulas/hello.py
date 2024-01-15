@@ -22,15 +22,15 @@ import os  # import the os module
 # get the LANG variable from the environment
 current_language = os.getenv("LANG", "pt_BR.UTF-8")[:5]
 
-msg = "Olá, Mundo!"
+MSG = "Olá, Mundo!"
 
 if current_language == "us_EN.UTF-8":
-    msg = "Hello, World!"
+    MSG = "Hello, World!"
 
 elif current_language == "es_ES.UTF-8":
-    msg = "¡Hola Mundo!"
+    MSG = "¡Hola Mundo!"
 
 elif current_language == "fr_FR.UTF-8":
-    msg = "Bonjour le monde!"
+    MSG = "Bonjour le monde!"
 
-print(msg)
+print(MSG)
